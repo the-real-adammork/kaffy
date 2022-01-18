@@ -1,6 +1,19 @@
 /*
  * Container style
  */
+
+.custom-block-indent-a {
+  text-indent: 30px;
+}
+
+.custom-block-indent-b {
+  text-indent: 60px;
+}
+
+.custom-block-indent-c {
+  text-indent: 90px;
+}
+
 .ps {
   overflow: hidden !important;
   overflow-anchor: none;

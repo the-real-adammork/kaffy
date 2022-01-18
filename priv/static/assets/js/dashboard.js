@@ -7,6 +7,13 @@ $(document).ready(function () {
     ClassicEditor
       .create(document.querySelector(textareaId), {
         // toolbar: ['heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote', '|', 'indent', 'outdent', '|', 'insertTable', '|', 'undo', 'redo'],
+        indentBlock: {
+          classes: [
+            'custom-block-indent-a', // First step - smallest indentation.
+            'custom-block-indent-b',
+            'custom-block-indent-c'  // Last step - biggest indentation.
+          ]
+        }
       })
       .then(editor => {
         window.editor = editor;
